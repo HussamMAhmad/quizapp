@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quiz_app {
+    width: 800px;
+    padding: 20px;
+    background-color: #eee;
+    margin: 20px auto;
+}
+
+.quiz_app .quiz_info {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.quiz_app .quiz_info .category {
+    flex: 1;
+}
+
+.quiz_app .quiz_info .count {
+    flex: 1;
+    text-align: right;
+}
+
+.quiz_app .quiz_area {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.quiz_app .quiz_area h2 {
+    margin: 0px;
+}
+
+.answer_area {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.answer_area .answer {
+    background-color: #eee;
+    padding: 15px;
+}
+
+.answer_area .answer:not(:last-child) {
+    border-bottom: 2px solid #d7d7d7;
+}
+
+.answer_area .answer label {
+    margin-left: 10px;
+    color: #777;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.answer_area .answer input[type='radio']:checked+label {
+    color: #00BCD4;
+}
+
+button {
+    width: 100%;
+    background-color: #00BCD4;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button:focus {
+    outline-color: none;
+}
+
+.bullets {
+    background-color: #fff;
+    display: flex;
+    padding: 20px;
+}
+
+.bullets .spans {
+    display: flex;
+}
+
+.bullets .spans span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: block;
+    margin-right: 10px;
+    flex: 1;
+}
+
+.bullets .spans span.on {
+    background-color: #00BCD4;
+}
+
+.bullets .countdown {
+    flex: 1;
+    text-align: right;
+}
+.results{
+    margin-top: 20px ;
+}
+.results span {
+    font-weight: bold;
+}
+
+.results span.bad {
+    color: #dc0a0a;
+}
+
+.results span.good {
+    color: #009688;
+}
+
+.results span.perfect {
+    color: #0075ff;
+}
